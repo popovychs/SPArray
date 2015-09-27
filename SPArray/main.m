@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SPArray.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        SPArray *arr1 = [[SPArray alloc]initWithSize:9];
+        [arr1 showOnScreen];
+        [arr1 start];
+        
+        sleep(3);
+        NSLog(@"Program is finished!");
+
     }
     return 0;
 }
